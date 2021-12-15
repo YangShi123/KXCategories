@@ -40,46 +40,46 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.subspec 'Foundation' do |foundation|
-      foundation.public_header_files = 'KXCategories/Foundation/KXFoundation.h'
-      foundation.source_files = 'KXCategories/Foundation/KXFoundation.h'
+      foundation.public_header_files = 'KXCategories/Classes/Foundation/KXFoundation.h'
+      foundation.source_files = 'KXCategories/Classes/Foundation/KXFoundation.h'
       foundation.frameworks = 'Foundation'
       
       foundation.subspec 'NSData' do |data|
-          data.source_files = 'KXCategories/Foundation/NSData/*.{h,m}'
+          data.source_files = 'KXCategories/Classes/Foundation/NSData/*.{h,m}'
           end
       foundation.subspec 'NSDate' do |date|
-          date.source_files = 'KXCategories/Foundation/NSDate/*.{h,m}'
+          date.source_files = 'KXCategories/Classes/Foundation/NSDate/*.{h,m}'
           end
       foundation.subspec 'NSString' do |string|
-          string.source_files = 'KXCategories/Foundation/NSData/*.{h,m}'
+          string.source_files = 'KXCategories/Classes/Foundation/NSString/*.{h,m}'
           end
       end
   
   s.subspec 'UIKit' do |uikit|
-      uikit.public_header_files = 'KXCategories/UIKit/KXUIKit.h'
-      uikit.source_files = 'KXCategories/UIKit/KXUIKit.h'
+      uikit.public_header_files = 'KXCategories/Classes/UIKit/KXUIKit.h'
+      uikit.source_files = 'KXCategories/Classes/UIKit/KXUIKit.h'
       uikit.frameworks = 'UIKit'
       
       uikit.subspec 'UIButton' do |button|
-          button.source_files = 'KXCategories/UIKit/UIButton/*.{h,m}'
+          button.source_files = 'KXCategories/Classes/UIKit/UIButton/*.{h,m}'
           end
       uikit.subspec 'UIBarButtonItem' do |barButtonItem|
-          barButtonItem.source_files = 'KXCategories/UIKit/UIBarButtonItem/*.{h,m}'
+          barButtonItem.source_files = 'KXCategories/Classes/UIKit/UIBarButtonItem/*.{h,m}'
           end
       uikit.subspec 'UIColor' do |color|
-          color.source_files = 'KXCategories/UIKit/UIColor/*.{h,m}'
+          color.source_files = 'KXCategories/Classes/UIKit/UIColor/*.{h,m}'
           end
       uikit.subspec 'UIDevice' do |device|
-          device.source_files = 'KXCategories/UIKit/UIDevice/*.{h,m}'
+          device.source_files = 'KXCategories/Classes/UIKit/UIDevice/*.{h,m}'
           end
       uikit.subspec 'UIImage' do |image|
-          image.source_files = 'KXCategories/UIKit/UIImage/*.{h,m}'
+          image.source_files = 'KXCategories/Classes/UIKit/UIImage/*.{h,m}'
           end
       uikit.subspec 'UINavigationController' do |navigationController|
-          navigationController.source_files = 'KXCategories/UIKit/UINavigationController/*.{h,m}'
+          navigationController.source_files = 'KXCategories/Classes/UIKit/UINavigationController/*.{h,m}'
           end
       uikit.subspec 'UIView' do |view|
-          view.source_files = 'KXCategories/UIKit/UIView/*.{h,m}'
+          view.source_files = 'KXCategories/Classes/UIKit/UIView/*.{h,m}'
           end
       end
 end
