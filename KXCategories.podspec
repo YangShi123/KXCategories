@@ -52,7 +52,7 @@ TODO: Add long description of the pod here.
           end
       foundation.subspec 'NSString' do |string|
           string.source_files = 'KXCategories/Foundation/NSString/*.{h,m}'
-          string.dependency = 'KXCategories/Foundation/NSData'
+          string.dependency 'KXCategories/Foundation/NSData'
           end
       end
   
