@@ -7,6 +7,7 @@
 //
 
 #import "SYViewController.h"
+#import <KXCategories/KXCategories.h>
 
 @interface SYViewController ()
 
