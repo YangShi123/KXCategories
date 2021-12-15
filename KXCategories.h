@@ -1,12 +1,8 @@
-//
-//  KXCategories.h
-//  Pods
-//
-//  Created by Rex on 2021/12/15.
-//
 
 #ifndef KXCategories_h
 #define KXCategories_h
 
+#import <KXCategories/KXUIKit.h>
+#import <KXCategories/KXFoundation.h>
 
 #endif /* KXCategories_h */

@@ -1,12 +1,8 @@
-//
-//  KXFoundation.h
-//  Pods
-//
-//  Created by Rex on 2021/12/15.
-//
 
 #ifndef KXFoundation_h
 #define KXFoundation_h
-
+#import <KXCategories/NSData+KX.h>
+#import <KXCategories/NSDate+KX.h>
+#import <KXCategories/NSString+KX.h>
 
 #endif /* KXFoundation_h */
