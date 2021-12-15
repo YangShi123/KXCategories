@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KXCategories'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '这是一个开心的category'
 
 # This description is used to generate tags and improve search results.
@@ -28,15 +28,58 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/YangShi123/KXCategories.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
-  s.platform = :ios, "10.0"
-  s.source_files = 'KXCategories/Classes/**/*'
+  s.ios.deployment_target = '10.0'
+  s.source_files = 'KXCategories/Classes/KXCategories.h'
   
   # s.resource_bundles = {
   #   'KXCategories' => ['KXCategories/Assets/*.png']
   # }
 
-   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/KXCategories.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'Foundation' do |foundation|
+      foundation.public_header_files = 'KXCategories/Foundation/KXFoundation.h'
+      foundation.source_files = 'KXCategories/Foundation/KXFoundation.h'
+      foundation.frameworks = 'Foundation'
+      
+      foundation.subspec 'NSData' do |data|
+          data.source_files = 'KXCategories/Foundation/NSData/*.{h,m}'
+          end
+      foundation.subspec 'NSDate' do |date|
+          date.source_files = 'KXCategories/Foundation/NSDate/*.{h,m}'
+          end
+      foundation.subspec 'NSString' do |string|
+          string.source_files = 'KXCategories/Foundation/NSData/*.{h,m}'
+          end
+      end
+  
+  s.subspec 'UIKit' do |uikit|
+      uikit.public_header_files = 'KXCategories/UIKit/KXUIKit.h'
+      uikit.source_files = 'KXCategories/UIKit/KXUIKit.h'
+      uikit.frameworks = 'UIKit'
+      
+      uikit.subspec 'UIButton' do |button|
+          button.source_files = 'KXCategories/UIKit/UIButton/*.{h,m}'
+          end
+      uikit.subspec 'UIBarButtonItem' do |barButtonItem|
+          barButtonItem.source_files = 'KXCategories/UIKit/UIBarButtonItem/*.{h,m}'
+          end
+      uikit.subspec 'UIColor' do |color|
+          color.source_files = 'KXCategories/UIKit/UIColor/*.{h,m}'
+          end
+      uikit.subspec 'UIDevice' do |device|
+          device.source_files = 'KXCategories/UIKit/UIDevice/*.{h,m}'
+          end
+      uikit.subspec 'UIImage' do |image|
+          image.source_files = 'KXCategories/UIKit/UIImage/*.{h,m}'
+          end
+      uikit.subspec 'UINavigationController' do |navigationController|
+          navigationController.source_files = 'KXCategories/UIKit/UINavigationController/*.{h,m}'
+          end
+      uikit.subspec 'UIView' do |view|
+          view.source_files = 'KXCategories/UIKit/UIView/*.{h,m}'
+          end
+      end
 end
