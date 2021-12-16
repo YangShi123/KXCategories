@@ -136,6 +136,14 @@
     return [scan scanInteger:&val] && [scan isAtEnd];
 }
 
+#pragma mark - 是否为空字符串
+- (BOOL)kx_isEmpty {
+    if (self.length == 0 || [self isKindOfClass:[NSNull class]] || self == nil) {
+        return YES;
+    }
+    return NO;
+}
+
 #pragma mark - 正则验证
 - (BOOL)isValidByRegex:(NSString *)regex {
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
