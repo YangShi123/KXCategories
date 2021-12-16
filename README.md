@@ -1,28 +1,46 @@
-# KXCategories
+# 这是一个开心的Category
 
-[![CI Status](https://img.shields.io/travis/YangShi123/KXCategories.svg?style=flat)](https://travis-ci.org/YangShi123/KXCategories)
 [![Version](https://img.shields.io/cocoapods/v/KXCategories.svg?style=flat)](https://cocoapods.org/pods/KXCategories)
-[![License](https://img.shields.io/cocoapods/l/KXCategories.svg?style=flat)](https://cocoapods.org/pods/KXCategories)
 [![Platform](https://img.shields.io/cocoapods/p/KXCategories.svg?style=flat)](https://cocoapods.org/pods/KXCategories)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
-KXCategories is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+导入所有的库:
 
 ```ruby
 pod 'KXCategories'
 ```
+单独导入某个库:
+
+```ruby
+pod 'KXCategories/Foundation'
+```
+or:
+```ruby
+pod 'KXCategories/Foundation/NSDate'
+```
+
+## Content
+
+### Foundation
+* NSString
+* NSDate
+* NSData
+
+
+### UIKit
+* UIView
+* UIButton
+* UIColor
+* UIImage
+* UIDevice
+* UIBarButtonItem
+* UINavigationController
+
 
 ## Author
 
-YangShi123, shiyawn@163.com
+YangShi123, 421111472@qq.com
 
 ## License
 
