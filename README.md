@@ -26,6 +26,8 @@ pod 'KXCategories/Foundation/NSDate'
 * NSString
 * NSDate
 * NSData
+* NSArray
+* NSDictionary
 
 
 ### UIKit
@@ -36,6 +38,7 @@ pod 'KXCategories/Foundation/NSDate'
 * UIDevice
 * UIBarButtonItem
 * UINavigationController
+* UIScreen
 
 
 ## Author
