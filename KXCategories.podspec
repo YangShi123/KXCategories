@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KXCategories'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '这是一个开心的category'
 
 # This description is used to generate tags and improve search results.
@@ -54,6 +54,12 @@ TODO: Add long description of the pod here.
           string.source_files = 'KXCategories/Foundation/NSString/*.{h,m}'
           string.dependency 'KXCategories/Foundation/NSData'
           end
+      foundation.subspec 'NSArray' do |array|
+          array.source_files = 'KXCategories/Foundation/NSArray/*.{h,m}'
+          end
+      foundation.subspec 'NSDictionary' do |dictionary|
+          dictionary.source_files = 'KXCategories/Foundation/NSDictionary/*.{h,m}'
+          end
       end
   
   s.subspec 'UIKit' do |uikit|
@@ -81,6 +87,9 @@ TODO: Add long description of the pod here.
           end
       uikit.subspec 'UIView' do |view|
           view.source_files = 'KXCategories/UIKit/UIView/*.{h,m}'
+          end
+      uikit.subspec 'UIScreen' do |screen|
+          screen.source_files = 'KXCategories/UIKit/UIScreen/*.{h,m}'
           end
       end
 end

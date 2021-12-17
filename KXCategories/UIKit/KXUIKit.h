@@ -9,5 +9,6 @@
 #import <KXCategories/UIDevice+KX.h>
 #import <KXCategories/UIImage+KX.h>
 #import <KXCategories/UINavigationController+KX.h>
+#import <KXCategories/UIScreen+KX.h>
 
 #endif /* KXUIKit_h */
